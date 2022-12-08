@@ -1,0 +1,308 @@
+html {
+    scroll-behavior: smooth;
+  }
+  /* Scroll bar color */
+  ::-webkit-scrollbar{
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #ddd;
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#fff,#00bc0f,#fff);
+    border-radius: 15px;
+  }
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    background-color: whitesmoke;
+}
+.loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-image: url('../Gravity\ Official\ Website/images/intro.jfif'); 
+    background-size: cover;
+    background-position: center;
+
+}
+.circle{
+	position:absolute;
+	width: 40px;
+	height: 40px;
+	border: 5px solid rgba(255,255,255,0.2);
+	border-radius: 50%;
+	border-top-color: rgb(255, 251, 0);
+	animation: spin 1s linear infinite;
+    left: 480px;
+    top: 210px;
+}
+@keyframes spin{
+    100%{
+		transform: rotate(360deg);
+    }
+}
+.slideshow-container{
+    background-image: url('../Gravity/_YF_0009.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    animation: slide 10s infinite;
+    padding: 25px 25px;
+}
+@keyframes slide {
+    0%{
+        background-image: url('../Gravity/_YF_0003.jpg');
+    }
+    33%{
+        background-image: url('../Gravity/_YF_0023.jpg');
+    }
+    67%{
+        background-image: url('../Gravity/DJI_0032.jpg');
+    }
+    
+}
+.head {
+    background:#058f11;
+    height: 50px;
+}
+.container {
+    width: 100%;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+ ul, li, ol {
+    
+    list-style: none;
+} 
+ ul.email_call {
+    padding-top: 12px;
+    padding-right: 200px
+}
+ul.email_call li {
+    display: inline-block;
+}
+ul.email_call li a {
+    color: #fff;
+    padding-right: 60px;
+    text-decoration: none;
+}
+ul.email_call li a img {
+    padding-right: 10px;
+}
+ul.social_icon {
+    float: right;
+    padding-top: 12px;
+    
+}
+ul.social_icon li {
+    display: inline-block;
+    margin: 0 4px;
+}
+ul.social_icon li a {
+    color: #333;
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 105px;
+    font-size: 17px;
+    text-decoration: none;
+    border-color: #333;
+}
+ul.social_icon li a:hover {
+    color: #00bc0f;
+} 
+.navbar
+{
+    display: block;
+    align-items: center;
+    
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;   
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+  color: #333;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  line-break: 20px;
+}
+nav ul li a:hover{
+    color: #00bc0f;
+}
+.account-btn{
+    background: #00bc0f;
+    border-radius: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.account-btn a{
+    color: #fff;
+  }
+  .account-btn a:hover{
+    color: #333;
+  }
+  .search
+{
+    position: relative;
+    width: 350px;
+    margin: 0 10px;
+}
+.search label
+{
+    position: relative;
+    width: 100%;
+}
+.search label input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #999;
+}
+.search label ion-icon
+{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+}
+.rows
+{
+    background: url('../Gravity\ Official\ Website/images/gravitylogo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 40px;
+}
+
+  
+  #about h6 {
+    color: #858585;
+    margin: 0;
+  }
+  .btn
+{
+    display: inline-block;
+    background:#00bc0f;
+    color: #fff;
+    padding: 8px 30px;
+    margin:  30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+.btn:hover
+{
+    background: rgb(4, 4, 97);
+}
+.col-3
+{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-top: 1.5em;
+  
+  transition: transform 0.5s;
+}
+.col-3:hover
+{
+  transform: translateY(-20px);
+}
+.col-3 img
+{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.col-3 p{
+  font-size: 20px;
+  color: #555;
+}
+.col-3 a:hover, a:active, a:focus {
+  color: black;
+  outline: none;
+  transition: 0.5s;
+}
+.small-container
+{
+  max-width: 1080px;
+  margin: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.title {
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+.title::after {
+    content: '';
+    background: #00bc0f;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ span
+{
+    font-family: 'Roboto', sans-serif;
+}
+.col-3 a {
+    text-decoration: none;
+    color: #00bc0f;
+}
+.categories {
+    background-color: #ffffff;
+    height: 550px;
+}
+
